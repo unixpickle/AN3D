@@ -13,6 +13,10 @@
 		FAA08405159A01E50016C62F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FAA08403159A01E50016C62F /* Credits.rtf */; };
 		FAA08408159A01E50016C62F /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA08407159A01E50016C62F /* ANAppDelegate.m */; };
 		FAA0840B159A01E50016C62F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAA08409159A01E50016C62F /* MainMenu.xib */; };
+		FAA08413159A01F00016C62F /* AN3DView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA08412159A01F00016C62F /* AN3DView.m */; };
+		FAA08415159A021B0016C62F /* AN3DMath.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA08414159A021B0016C62F /* AN3DMath.m */; };
+		FAA08419159A08BB0016C62F /* AN3DViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA08418159A08BB0016C62F /* AN3DViewTest.m */; };
+		FAA0841B159A184D0016C62F /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA0841A159A184D0016C62F /* Quartz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +25,21 @@
 		FAA083F7159A01E50016C62F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FAA083F8159A01E50016C62F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FAA083F9159A01E50016C62F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FAA083FC159A01E50016C62F /* AN3D-Info.plist */ = {isa = PBXFileReference; path = "AN3D-Info.plist"; sourceTree = "<group>"; };
+		FAA083FC159A01E50016C62F /* AN3D-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AN3D-Info.plist"; sourceTree = "<group>"; };
 		FAA083FE159A01E50016C62F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAA08400159A01E50016C62F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FAA08402159A01E50016C62F /* AN3D-Prefix.pch */ = {isa = PBXFileReference; path = "AN3D-Prefix.pch"; sourceTree = "<group>"; };
+		FAA08402159A01E50016C62F /* AN3D-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AN3D-Prefix.pch"; sourceTree = "<group>"; };
 		FAA08404159A01E50016C62F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FAA08406159A01E50016C62F /* ANAppDelegate.h */ = {isa = PBXFileReference; path = ANAppDelegate.h; sourceTree = "<group>"; };
+		FAA08406159A01E50016C62F /* ANAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANAppDelegate.h; sourceTree = "<group>"; };
 		FAA08407159A01E50016C62F /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
 		FAA0840A159A01E50016C62F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FAA08411159A01F00016C62F /* AN3DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AN3DView.h; sourceTree = "<group>"; };
+		FAA08412159A01F00016C62F /* AN3DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AN3DView.m; sourceTree = "<group>"; };
+		FAA08414159A021B0016C62F /* AN3DMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AN3DMath.m; sourceTree = "<group>"; };
+		FAA08416159A02230016C62F /* AN3DMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AN3DMath.h; sourceTree = "<group>"; };
+		FAA08417159A08BB0016C62F /* AN3DViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AN3DViewTest.h; sourceTree = "<group>"; };
+		FAA08418159A08BB0016C62F /* AN3DViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AN3DViewTest.m; sourceTree = "<group>"; };
+		FAA0841A159A184D0016C62F /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAA0841B159A184D0016C62F /* Quartz.framework in Frameworks */,
 				FAA083F5159A01E50016C62F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +75,7 @@
 		FAA083F3159A01E50016C62F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAA0841A159A184D0016C62F /* Quartz.framework */,
 				FAA083F4159A01E50016C62F /* Cocoa.framework */,
 				FAA083F6159A01E50016C62F /* Other Frameworks */,
 			);
@@ -84,8 +97,14 @@
 			children = (
 				FAA08406159A01E50016C62F /* ANAppDelegate.h */,
 				FAA08407159A01E50016C62F /* ANAppDelegate.m */,
+				FAA08417159A08BB0016C62F /* AN3DViewTest.h */,
+				FAA08418159A08BB0016C62F /* AN3DViewTest.m */,
 				FAA08409159A01E50016C62F /* MainMenu.xib */,
 				FAA083FB159A01E50016C62F /* Supporting Files */,
+				FAA08411159A01F00016C62F /* AN3DView.h */,
+				FAA08412159A01F00016C62F /* AN3DView.m */,
+				FAA08416159A02230016C62F /* AN3DMath.h */,
+				FAA08414159A021B0016C62F /* AN3DMath.m */,
 			);
 			path = AN3D;
 			sourceTree = "<group>";
@@ -168,6 +187,9 @@
 			files = (
 				FAA08401159A01E50016C62F /* main.m in Sources */,
 				FAA08408159A01E50016C62F /* ANAppDelegate.m in Sources */,
+				FAA08413159A01F00016C62F /* AN3DView.m in Sources */,
+				FAA08415159A021B0016C62F /* AN3DMath.m in Sources */,
+				FAA08419159A08BB0016C62F /* AN3DViewTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
